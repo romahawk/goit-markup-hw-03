@@ -225,6 +225,9 @@ img {
   text-align: center;
   text-transform: capitalize;
   color: var(--navy-blue);
+}
+
+.team .team-title {
   margin-bottom: 72px;
 }
 
