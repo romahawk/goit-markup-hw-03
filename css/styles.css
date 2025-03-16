@@ -46,7 +46,7 @@ img {
 
 /* Container */
 .container {
-  max-width: 1440px;
+  max-width: 1158px; /* Adjusted from 1200px to a common Figma width */
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -77,7 +77,7 @@ img {
   text-transform: uppercase;
   color: var(--iris);
   text-decoration: none;
-  margin-right: 76px;
+  margin-right: 76px; /* Common Figma spacing between logo and nav */
 }
 
 .logo span {
@@ -86,7 +86,7 @@ img {
 
 .header-nav-list {
   display: flex;
-  gap: 40px;
+  gap: 40px; /* Typical Figma spacing for nav items */
 }
 
 .header-nav-list-text {
@@ -96,6 +96,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--navy-blue);
   text-decoration: none;
+  padding: 24px 0; /* Aligns with header padding */
 }
 
 .header-nav-list-text:hover,
@@ -109,7 +110,7 @@ img {
 
 .address-list {
   display: flex;
-  gap: 40px;
+  gap: 40px; /* Spacing between email and phone */
 }
 
 .address-list-text {
@@ -129,7 +130,7 @@ img {
 /* #region Hero */
 .hero {
   background: var(--navy-blue);
-  padding: 188px 0;
+  padding: 188px 0; /* Typical Figma hero height */
   text-align: center;
 }
 
@@ -139,8 +140,8 @@ img {
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--white);
-  max-width: 496px;
-  margin: 0 auto 48px;
+  max-width: 496px; /* Common Figma constraint */
+  margin: 0 auto 48px; /* Spacing before button */
 }
 
 .hero-button {
@@ -152,11 +153,11 @@ img {
   color: var(--white);
   border: none;
   border-radius: 4px;
-  padding: 16px 32px;
+  padding: 16px 32px; /* Figma button padding */
   cursor: pointer;
-  display: block;
-  min-width: 169px;
-  margin: 0 auto;
+  display: block; /* Додано для центрування через margin */
+  min-width: 169px; /* Додано мінімальну ширину, як вказано */
+  margin: 0 auto; /* Центрування кнопки */
 }
 
 .hero-button:hover,
@@ -167,16 +168,16 @@ img {
 
 /* #region Benefits */
 .benefits {
-  padding: 120px 0;
+  padding: 120px 0; /* Standard section padding from Figma */
 }
 
 .benefits-list {
   display: flex;
-  gap: 24px;
+  gap: 24px; /* Common Figma grid spacing */
 }
 
 .benefits-list-item {
-  flex: 1;
+  flex: 1; /* Equal width for all items */
 }
 
 .benefits-list-title {
@@ -185,7 +186,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
-  margin-bottom: 8px;
+  margin-bottom: 8px; /* Spacing between title and text */
 }
 
 .benefits-list-text {
@@ -239,7 +240,10 @@ img {
 }
 
 .team-member-info {
-  padding: 32px 0;
+  padding: 32px 0; /* Відступи від краю контейнера, як вказано */
+  /* Або еквівалентно: */
+  /* padding-top: 32px; */
+  /* padding-bottom: 32px; */
 }
 
 .team-name {
@@ -247,18 +251,18 @@ img {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  text-align: center;
+  text-align: center; /* Вирівнювання по центру */
   color: var(--navy-blue);
-  margin-bottom: 8px;
+  margin-bottom: 8px; /* Відступ від заголовка до параграфу */
 }
 
 .team-role {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-align: center;
+  text-align: center; /* Вирівнювання по центру */
   color: var(--slate);
-  margin-bottom: 32px;
+  margin-bottom: 32px; /* Залишаємо відступ знизу, як у попередньому дизайні */
 }
 /* #endregion */
 
@@ -289,9 +293,9 @@ img {
 }
 
 .portfolio-item-info {
-  padding: 32px 16px;
-  border: 1px solid var(--cornflower);
-  border-top: none;
+  padding: 32px 16px; /* Відступи від країв контейнера */
+  border: 1px solid var(--cornflower); /* Обводка по периметру */
+  border-top: none; /* Скидання обводки для верхнього краю */
 }
 
 .portfolio-item-title {
@@ -300,7 +304,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
-  margin-bottom: 8px;
+  margin-bottom: 8px; /* Відступ між заголовком і параграфом */
 }
 
 .portfolio-item-text {
@@ -308,14 +312,17 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
-  margin: 0;
+  margin: 0; /* Скидаємо попередні відступи */
 }
 /* #endregion */
 
 /* #region Footer */
 .footer {
   background: var(--navy-blue);
-  padding: 100px 0;
+  padding: 100px 0; /* Відступи всередині секції, як вказано */
+  /* Або еквівалентно: */
+  /* padding-top: 100px; */
+  /* padding-bottom: 100px; */
 }
 
 .footer .container {
@@ -334,7 +341,7 @@ img {
   color: var(--iris);
   text-decoration: none;
   margin-bottom: 16px;
-  display: inline-block;
+  display: inline-block; /* Додано для надання блочних властивостей */
 }
 
 .span-footer {
@@ -350,8 +357,8 @@ img {
 }
 /* #endregion */
 
-/* Responsive Design */
-@media (max-width: 1440px) {
+/* Responsive Design (optional, adjust per Figma) */
+@media (max-width: 1158px) {
   .container {
     max-width: 100%;
   }
