@@ -195,6 +195,18 @@ img {
   letter-spacing: 0.02em;
   color: var(--slate);
 }
+
+/* Патерн для приховування елементів візуально, але доступних для екранних читачів */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* #endregion */
 
 /* #region Team */
@@ -211,39 +223,46 @@ img {
   text-align: center;
   text-transform: capitalize;
   color: var(--navy-blue);
-  margin-bottom: 72px; /* Figma spacing before team cards */
+  margin-bottom: 72px;
 }
 
 .team-list {
   display: flex;
-  gap: 24px; /* Grid spacing */
+  gap: 24px;
 }
 
 .team-list-li {
   background-color: var(--white);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
               0px 1px 1px rgba(46, 47, 66, 0.16),
-              0px 2px 1px rgba(46, 47, 66, 0.08); /* Figma shadow */
-  border-radius: 0 0 4px 4px; /* Rounded bottom corners */
+              0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0 0 4px 4px;
 }
 
-.team-list-item {
+.team-member-info {
+  padding: 32px 0; /* Відступи від краю контейнера, як вказано */
+  /* Або еквівалентно: */
+  /* padding-top: 32px; */
+  /* padding-bottom: 32px; */
+}
+
+.team-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  text-align: center;
+  text-align: center; /* Вирівнювання по центру */
   color: var(--navy-blue);
-  margin: 32px 0 8px; /* Spacing inside card */
+  margin-bottom: 8px; /* Відступ від заголовка до параграфу */
 }
 
-.team-list-item-text {
+.team-role {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-align: center;
+  text-align: center; /* Вирівнювання по центру */
   color: var(--slate);
-  margin-bottom: 32px;
+  margin-bottom: 32px; /* Залишаємо відступ знизу, як у попередньому дизайні */
 }
 /* #endregion */
 
