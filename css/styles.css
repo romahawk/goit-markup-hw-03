@@ -46,7 +46,7 @@ img {
 
 /* Container */
 .container {
-  max-width: 1158px; /* Adjusted from 1200px to a common Figma width */
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -77,7 +77,7 @@ img {
   text-transform: uppercase;
   color: var(--iris);
   text-decoration: none;
-  margin-right: 76px; /* Common Figma spacing between logo and nav */
+  margin-right: 76px;
 }
 
 .logo span {
@@ -86,7 +86,7 @@ img {
 
 .header-nav-list {
   display: flex;
-  gap: 40px; /* Typical Figma spacing for nav items */
+  gap: 40px;
 }
 
 .header-nav-list-text {
@@ -96,7 +96,6 @@ img {
   letter-spacing: 0.02em;
   color: var(--navy-blue);
   text-decoration: none;
-  padding: 24px 0; /* Aligns with header padding */
 }
 
 .header-nav-list-text:hover,
@@ -110,7 +109,7 @@ img {
 
 .address-list {
   display: flex;
-  gap: 40px; /* Spacing between email and phone */
+  gap: 40px;
 }
 
 .address-list-text {
@@ -130,7 +129,7 @@ img {
 /* #region Hero */
 .hero {
   background: var(--navy-blue);
-  padding: 188px 0; /* Typical Figma hero height */
+  padding: 188px 0;
   text-align: center;
 }
 
@@ -140,8 +139,8 @@ img {
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--white);
-  max-width: 496px; /* Common Figma constraint */
-  margin: 0 auto 48px; /* Spacing before button */
+  max-width: 496px;
+  margin: 0 auto 48px;
 }
 
 .hero-button {
@@ -153,11 +152,11 @@ img {
   color: var(--white);
   border: none;
   border-radius: 4px;
-  padding: 16px 32px; /* Figma button padding */
+  padding: 16px 32px;
   cursor: pointer;
-  display: block; /* Додано для центрування через margin */
-  min-width: 169px; /* Додано мінімальну ширину, як вказано */
-  margin: 0 auto; /* Центрування кнопки */
+  display: block;
+  min-width: 169px;
+  margin: 0 auto;
 }
 
 .hero-button:hover,
@@ -168,16 +167,16 @@ img {
 
 /* #region Benefits */
 .benefits {
-  padding: 120px 0; /* Standard section padding from Figma */
+  padding: 120px 0;
 }
 
 .benefits-list {
   display: flex;
-  gap: 24px; /* Common Figma grid spacing */
+  gap: 24px;
 }
 
 .benefits-list-item {
-  flex: 1; /* Equal width for all items */
+  flex: 1;
 }
 
 .benefits-list-title {
@@ -186,7 +185,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
-  margin-bottom: 8px; /* Spacing between title and text */
+  margin-bottom: 8px;
 }
 
 .benefits-list-text {
@@ -240,10 +239,7 @@ img {
 }
 
 .team-member-info {
-  padding: 32px 0; /* Відступи від краю контейнера, як вказано */
-  /* Або еквівалентно: */
-  /* padding-top: 32px; */
-  /* padding-bottom: 32px; */
+  padding: 32px 0;
 }
 
 .team-name {
@@ -251,18 +247,18 @@ img {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  text-align: center; /* Вирівнювання по центру */
+  text-align: center;
   color: var(--navy-blue);
-  margin-bottom: 8px; /* Відступ від заголовка до параграфу */
+  margin-bottom: 8px;
 }
 
 .team-role {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-align: center; /* Вирівнювання по центру */
+  text-align: center;
   color: var(--slate);
-  margin-bottom: 32px; /* Залишаємо відступ знизу, як у попередньому дизайні */
+  margin-bottom: 32px;
 }
 /* #endregion */
 
@@ -285,35 +281,41 @@ img {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 48px 24px; /* Row gap 48px, column gap 24px */
+  gap: 48px 24px;
 }
 
 .portfolio-list-item {
-  flex-basis: calc((100% - 48px) / 3); /* 3 items per row with gap */
+  flex-basis: calc((100% - 48px) / 3);
 }
 
-.portfolio-list-item-title {
+.portfolio-item-info {
+  padding: 32px 16px;
+  border: 1px solid var(--cornflower);
+  border-top: none;
+}
+
+.portfolio-item-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
-  margin: 32px 16px 8px; /* Padding inside card */
+  margin-bottom: 8px;
 }
 
-.portfolio-list-item-text {
+.portfolio-item-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
-  margin: 0 16px 32px;
+  margin: 0;
 }
 /* #endregion */
 
 /* #region Footer */
 .footer {
   background: var(--navy-blue);
-  padding: 60px 0;
+  padding: 100px 0;
 }
 
 .footer .container {
@@ -332,6 +334,7 @@ img {
   color: var(--iris);
   text-decoration: none;
   margin-bottom: 16px;
+  display: inline-block;
 }
 
 .span-footer {
@@ -343,12 +346,12 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--cloud);
-  max-width: 264px; /* Common Figma constraint */
+  max-width: 264px;
 }
 /* #endregion */
 
-/* Responsive Design (optional, adjust per Figma) */
-@media (max-width: 1158px) {
+/* Responsive Design */
+@media (max-width: 1440px) {
   .container {
     max-width: 100%;
   }
